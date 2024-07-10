@@ -1,0 +1,1240 @@
+{
+  "data": [
+    {
+      "id": "pro_01htz88xpr0mm7b3ta2pjkr7w2",
+      "name": "AeroEdit for learner pilots",
+      "type": "standard",
+      "description": "Essential tools for student pilots to manage flight logs, analyze performance, and plan routes, and ensure compliance. Valid student pilot certificate from the FAA required.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/bT1XUOJAQhOUxGs83cbk_pro.png",
+      "customData": {
+        "features": {
+          "aircraft_performance": true,
+          "compliance_monitoring": false,
+          "flight_log_management": true,
+          "payment_by_invoice": false,
+          "route_planning": true,
+          "sso": false
+        },
+        "suggested_addons": [
+          "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "pro_01gsz97mq9pa4fkyy0wqenepkz"
+        ],
+        "upgrade_description": null
+      },
+      "status": "active",
+      "createdAt": "2024-04-08T16:22:16.024Z",
+      "updatedAt": "2024-04-08T16:27:59.074Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01hv0vax6rv18t4tamj848ne4d",
+          "productId": "pro_01htz88xpr0mm7b3ta2pjkr7w2",
+          "description": "Monthly (per seat) with 14 day trial",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": {
+            "interval": "day",
+            "frequency": 14
+          },
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "500",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "IE",
+                "FR",
+                "DE"
+              ],
+              "unitPrice": {
+                "amount": "700",
+                "currencyCode": "EUR"
+              }
+            },
+            {
+              "countryCodes": [
+                "GB"
+              ],
+              "unitPrice": {
+                "amount": "600",
+                "currencyCode": "GBP"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-04-09T07:14:38.424504Z",
+          "updatedAt": "2024-04-09T07:15:53.950721Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01h1vjes1y163xfj1rh1tkfb65",
+      "name": "Analytics addon",
+      "type": "standard",
+      "description": "Unlock advanced insights into your flight data with enhanced analytics and reporting features. Includes customizable reporting templates and trend analysis across flights.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/97dRpA6SXzcE6ekK9CAr_analytics.png",
+      "customData": null,
+      "status": "active",
+      "createdAt": "2023-06-01T13:30:50.302Z",
+      "updatedAt": "2024-04-05T15:47:17.163Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01h46e6re3jv8pht6gta6sw1bn",
+          "productId": "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "description": "ARS",
+          "type": "standard",
+          "name": null,
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "10000",
+            "currencyCode": "ARS"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-06-30T15:19:35.619355Z",
+          "updatedAt": "2023-06-30T15:19:44.920491Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h1vjg3sqjj1y9tvazkdqe5vt",
+          "productId": "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "description": "Annual",
+          "type": "standard",
+          "name": "Annual (recurring addon)",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "100000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "active",
+          "createdAt": "2023-06-01T13:31:34.071379Z",
+          "updatedAt": "2024-04-05T14:33:40.972651Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h1vjfevh5etwq3rb416a23h2",
+          "productId": "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "description": "Monthly",
+          "type": "standard",
+          "name": "Monthly (recurring addon)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "10000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-06-01T13:31:12.625056Z",
+          "updatedAt": "2024-04-12T10:42:45.476453Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+      "name": "Custom domains",
+      "type": "standard",
+      "description": "Make AeroEdit truly your own with custom domains. Custom domains reinforce your brand identity and make it easy for your team to access your account.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/XIG7UXoJQHmlIAiKcnkA_custom-domains.png",
+      "customData": null,
+      "status": "active",
+      "createdAt": "2023-02-23T14:01:02.441Z",
+      "updatedAt": "2024-04-05T15:43:28.971Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01hxvrrq54rygj4vtfdgz4wf3v",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "GB"
+              ],
+              "unitPrice": {
+                "amount": "9000",
+                "currencyCode": "GBP"
+              }
+            },
+            {
+              "countryCodes": [
+                "IN"
+              ],
+              "unitPrice": {
+                "amount": "2320",
+                "currencyCode": "INR"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:40:38.564866Z",
+          "updatedAt": "2024-05-14T14:40:38.564866Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvrpzy56v0vtw0xv8nmd6za",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:39:42.021146Z",
+          "updatedAt": "2024-05-14T14:39:42.021146Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvrnxphgeabk7d3sbd59fx1",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:39:06.961624Z",
+          "updatedAt": "2024-05-14T14:39:06.961624Z",
+          "customData": {
+            "test": "here"
+          },
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvrnjq8jmv8gb0784cb5cd9",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "external",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:38:55.720598Z",
+          "updatedAt": "2024-05-14T14:38:55.720598Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvrnfg9c1aptd99xsbdhwkv",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "internal",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:38:52.425146Z",
+          "updatedAt": "2024-05-14T14:38:52.425146Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvrmxfsg8jhr3b4504m32e9",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:38:33.977577Z",
+          "updatedAt": "2024-05-14T14:38:33.977577Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvq43bx4ssht09ba5njsd6e",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:11:54.365612Z",
+          "updatedAt": "2024-05-14T14:11:54.365612Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01hxvq38fy7dkatedyyjmjcfjh",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "New user price (FTUE)",
+          "type": "custom",
+          "name": "Invigaron Berries welcome price",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "999",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2024-05-14T14:11:26.846681Z",
+          "updatedAt": "2024-05-14T14:11:26.846681Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h982194qx6az312q4jc7pb7y",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "One-time charge",
+          "type": "standard",
+          "name": "One-time charge",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "20000000",
+            "currencyCode": "CNY"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-09-01T09:43:51.191651Z",
+          "updatedAt": "2024-04-05T14:34:51.586754Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h95tv9jar7paw64xf2f9vdpt",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "One-time charge",
+          "type": "standard",
+          "name": null,
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "15000",
+            "currencyCode": "EUR"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-08-31T12:59:46.122983Z",
+          "updatedAt": "2024-04-05T14:34:57.756822Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h04vsc3t3xhgqma66ktedrqf",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "Invoice 23880 USD",
+          "type": "standard",
+          "name": null,
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "23880",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 9999
+          },
+          "status": "archived",
+          "createdAt": "2023-05-11T07:35:40.922787Z",
+          "updatedAt": "2023-06-23T07:39:23.539343Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz98e27ak2tyhexptwc58yk",
+          "productId": "pro_01gsz97mq9pa4fkyy0wqenepkz",
+          "description": "One-time addon",
+          "type": "standard",
+          "name": "One-time addon",
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "19900",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T14:01:28.391712Z",
+          "updatedAt": "2024-04-09T07:23:10.921392Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01gsz92krfzy3hcx5h5rtgnfwz",
+      "name": "VIP support",
+      "type": "standard",
+      "description": "Get exclusive access to our expert team of product specialists, available to help you make the most of your AeroEdit subscription.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/qgyipKJwRtq98YNboipo_vip-support.png",
+      "customData": null,
+      "status": "active",
+      "createdAt": "2023-02-23T13:58:17.615Z",
+      "updatedAt": "2024-04-05T15:44:02.893Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01h3w4532c3gx9s8nzr14c1z5p",
+          "productId": "pro_01gsz92krfzy3hcx5h5rtgnfwz",
+          "description": "Monthly (recurring addon) - AUD",
+          "type": "standard",
+          "name": null,
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "37500",
+            "currencyCode": "AUD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-06-26T15:11:30.892765Z",
+          "updatedAt": "2023-06-29T10:48:34.017593Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz96z29d88jrmsf2ztbfgjg",
+          "productId": "pro_01gsz92krfzy3hcx5h5rtgnfwz",
+          "description": "Annual (recurring addon)",
+          "type": "standard",
+          "name": "Annual (recurring addon)",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "300000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T14:00:40.265185Z",
+          "updatedAt": "2024-03-25T14:31:18.587603Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz95g2zrkagg294kpstx54r",
+          "productId": "pro_01gsz92krfzy3hcx5h5rtgnfwz",
+          "description": "Monthly (recurring addon)",
+          "type": "standard",
+          "name": "Monthly (recurring addon)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "25000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:59:52.159927Z",
+          "updatedAt": "2024-04-09T07:27:48.018296Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01gsz4vmqbjk3x4vvtafffd540",
+      "name": "AeroEdit Enterprise",
+      "type": "standard",
+      "description": "The ultimate solution for organizations, featuring all Pro capabilities plus multi-user support, advanced data storage capabilities, plus personalized onboarding, dedicated account management, and the ability to pay via invoice.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/Ws808ziTS76a6YbnMkiK_enterprise.png",
+      "customData": {
+        "features": {
+          "aircraft_performance": true,
+          "compliance_monitoring": true,
+          "flight_log_management": true,
+          "payment_by_invoice": true,
+          "route_planning": true,
+          "sso": true
+        },
+        "suggested_addons": [],
+        "upgrade_description": "Ready to reach new heights? Upgrade to enterprise to unlock single sign-on, payment by invoice, and dedicated account management."
+      },
+      "status": "active",
+      "createdAt": "2023-02-23T12:44:34.923Z",
+      "updatedAt": "2024-04-05T15:58:28.309Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01hj3rykvg0r83rnpwp5h87wy8",
+          "productId": "pro_01gsz4vmqbjk3x4vvtafffd540",
+          "description": "Globex annual 2024",
+          "type": "custom",
+          "name": "Annual (per seat) renewal deal for Globex",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "50000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-12-20T14:09:25.360484Z",
+          "updatedAt": "2023-12-20T14:09:25.360485Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h04vsc55arfb46vp1mjxga8n",
+          "productId": "pro_01gsz4vmqbjk3x4vvtafffd540",
+          "description": "Invoice 73972 USD",
+          "type": "standard",
+          "name": null,
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "73972",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 9999
+          },
+          "status": "archived",
+          "createdAt": "2023-05-11T07:35:40.965262Z",
+          "updatedAt": "2023-06-29T10:22:04.882796Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gvne87kv8vbqa9jkfbmgtsed",
+          "productId": "pro_01gsz4vmqbjk3x4vvtafffd540",
+          "description": "Monthly",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "5000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-03-16T14:47:43.995985Z",
+          "updatedAt": "2024-04-09T07:29:19.91977Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gvcz8ex96mzr0d3rt7yy6qjv",
+          "productId": "pro_01gsz4vmqbjk3x4vvtafffd540",
+          "description": "Yearly plan",
+          "type": "standard",
+          "name": null,
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "30000",
+            "currencyCode": "EUR"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "ES"
+              ],
+              "unitPrice": {
+                "amount": "4500",
+                "currencyCode": "EUR"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-03-13T07:51:47.3696Z",
+          "updatedAt": "2023-06-29T10:22:01.828101Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz91wy9k1yn7kx82aafwvea",
+          "productId": "pro_01gsz4vmqbjk3x4vvtafffd540",
+          "description": "Annual",
+          "type": "standard",
+          "name": "Annual (per seat)",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "50000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:57:54.249913Z",
+          "updatedAt": "2024-04-05T14:32:00.471447Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01gsz4t5hdjse780zja8vvr7jg",
+      "name": "AeroEdit Pro",
+      "type": "standard",
+      "description": "Designed for professional pilots, including all features plus in Basic plus compliance monitoring, route optimization, and third-party integrations.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/bT1XUOJAQhOUxGs83cbk_pro.png",
+      "customData": {
+        "features": {
+          "aircraft_performance": true,
+          "compliance_monitoring": true,
+          "flight_log_management": true,
+          "payment_by_invoice": false,
+          "route_planning": true,
+          "sso": false
+        },
+        "suggested_addons": [
+          "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "pro_01gsz97mq9pa4fkyy0wqenepkz"
+        ],
+        "upgrade_description": "Move from Basic to Pro to take advantage of aircraft performance, advanced route planning, and compliance monitoring."
+      },
+      "status": "active",
+      "createdAt": "2023-02-23T12:43:46.605Z",
+      "updatedAt": "2024-04-05T15:53:44.687Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01hp738hdarbgkc8xxzpxyjnsa",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "21 days! (per seat)",
+          "type": "standard",
+          "name": "21 days! (per seat)",
+          "billingCycle": {
+            "interval": "day",
+            "frequency": 21
+          },
+          "trialPeriod": {
+            "interval": "day",
+            "frequency": 2
+          },
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "5000",
+            "currencyCode": "EUR"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "US"
+              ],
+              "unitPrice": {
+                "amount": "3000",
+                "currencyCode": "USD"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 300
+          },
+          "status": "archived",
+          "createdAt": "2024-02-09T14:10:06.890872Z",
+          "updatedAt": "2024-02-09T15:16:05.284499Z",
+          "customData": {
+            "this_has_changed": "New value here."
+          },
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01he6hp8cg49jjf1pdjf6d5yw1",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Weekly (per seat)",
+          "type": "standard",
+          "name": null,
+          "billingCycle": {
+            "interval": "week",
+            "frequency": 1
+          },
+          "trialPeriod": {
+            "interval": "week",
+            "frequency": 1
+          },
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "1000",
+            "currencyCode": "GBP"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "CA",
+                "US"
+              ],
+              "unitPrice": {
+                "amount": "5000",
+                "currencyCode": "USD"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 1
+          },
+          "status": "archived",
+          "createdAt": "2023-11-01T22:57:27.440744Z",
+          "updatedAt": "2023-11-07T14:21:27.158098Z",
+          "customData": {
+            "foo": "bar"
+          },
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01he6fm50df5cjmwdy3v3p1z1t",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Monthly (per seat)",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "500",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-11-01T22:21:21.29328Z",
+          "updatedAt": "2023-11-07T14:21:19.253895Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01h3w43qkth8ph23yz2a4q6yrh",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Monthly (per seat) - AUD",
+          "type": "standard",
+          "name": null,
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "4500",
+            "currencyCode": "AUD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-06-26T15:10:46.394813Z",
+          "updatedAt": "2023-06-27T15:31:48.795845Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gz3yc9d1kwr7qx8hg8rr8trr",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Invoice 46000 USD",
+          "type": "standard",
+          "name": null,
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "46000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 9999
+          },
+          "status": "archived",
+          "createdAt": "2023-04-28T12:46:01.633454Z",
+          "updatedAt": "2023-06-24T11:55:07.496666Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz8z1q1n00f12qt82y31smh",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Annual",
+          "type": "standard",
+          "name": "Annual (per seat)",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "30000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 999
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:56:20.833019Z",
+          "updatedAt": "2024-04-11T13:47:49.566301Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz8x8sawmvhz1pv30nge1ke",
+          "productId": "pro_01gsz4t5hdjse780zja8vvr7jg",
+          "description": "Monthly",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "3000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 999
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:55:22.538367Z",
+          "updatedAt": "2024-04-11T13:54:52.254748Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    },
+    {
+      "id": "pro_01gsz4s0w61y0pp88528f1wvvb",
+      "name": "AeroEdit Basic",
+      "type": "standard",
+      "description": "Ideal for hobbyist pilots AeroEdit Basic offers flight log creation, editing, basic performance tracking, route planning, and export options.",
+      "taxCategory": "standard",
+      "imageUrl": "https://paddle.s3.amazonaws.com/user/165798/oi0r8qNmQzuNpj9pLHcT_basic.png",
+      "customData": {
+        "features": {
+          "aircraft_performance": false,
+          "compliance_monitoring": false,
+          "flight_log_management": true,
+          "payment_by_invoice": false,
+          "route_planning": false,
+          "sso": false
+        },
+        "suggested_addons": [
+          "pro_01h1vjes1y163xfj1rh1tkfb65",
+          "pro_01gsz97mq9pa4fkyy0wqenepkz"
+        ],
+        "upgrade_description": null
+      },
+      "status": "active",
+      "createdAt": "2023-02-23T12:43:09.062Z",
+      "updatedAt": "2024-04-05T15:56:39.477Z",
+      "importMeta": null,
+      "prices": [
+        {
+          "id": "pri_01hrpzrsk358jq33bzh4a3yv16",
+          "productId": "pro_01gsz4s0w61y0pp88528f1wvvb",
+          "description": "Monthly (per seat) - TRIAL",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": {
+            "interval": "day",
+            "frequency": 7
+          },
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "1000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 999999
+          },
+          "status": "archived",
+          "createdAt": "2024-03-11T14:48:19.81118Z",
+          "updatedAt": "2024-03-11T14:58:22.695165Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01het3drjd2k2h5s7jycv8mg3f",
+          "productId": "pro_01gsz4s0w61y0pp88528f1wvvb",
+          "description": "Annually (per seat)",
+          "type": "standard",
+          "name": "Annually",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "taxMode": "external",
+          "unitPrice": {
+            "amount": "100000",
+            "currencyCode": "GBP"
+          },
+          "unitPriceOverrides": [
+            {
+              "countryCodes": [
+                "US"
+              ],
+              "unitPrice": {
+                "amount": "200000",
+                "currencyCode": "USD"
+              }
+            }
+          ],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 10
+          },
+          "status": "archived",
+          "createdAt": "2023-11-09T13:12:57.677534Z",
+          "updatedAt": "2023-11-09T13:13:59.189426Z",
+          "customData": {
+            "features": {
+              "reports": true
+            }
+          },
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01het3d6ey6rn9rykpks8xptgb",
+          "productId": "pro_01gsz4s0w61y0pp88528f1wvvb",
+          "description": "Monthly (per seat)",
+          "type": "standard",
+          "name": null,
+          "billingCycle": null,
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "500",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "archived",
+          "createdAt": "2023-11-09T13:12:39.134746Z",
+          "updatedAt": "2023-11-09T13:14:24.36205Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz8s48pyr4mbhvv2xfggesg",
+          "productId": "pro_01gsz4s0w61y0pp88528f1wvvb",
+          "description": "Annual",
+          "type": "standard",
+          "name": "Annual (per seat)",
+          "billingCycle": {
+            "interval": "year",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "10000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:53:06.838342Z",
+          "updatedAt": "2024-04-09T07:24:33.205169Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        },
+        {
+          "id": "pri_01gsz8ntc6z7npqqp6j4ys0w1w",
+          "productId": "pro_01gsz4s0w61y0pp88528f1wvvb",
+          "description": "Monthly",
+          "type": "standard",
+          "name": "Monthly (per seat)",
+          "billingCycle": {
+            "interval": "month",
+            "frequency": 1
+          },
+          "trialPeriod": null,
+          "taxMode": "account_setting",
+          "unitPrice": {
+            "amount": "1000",
+            "currencyCode": "USD"
+          },
+          "unitPriceOverrides": [],
+          "quantity": {
+            "minimum": 1,
+            "maximum": 100
+          },
+          "status": "active",
+          "createdAt": "2023-02-23T13:51:18.406674Z",
+          "updatedAt": "2024-04-05T14:29:40.000454Z",
+          "customData": null,
+          "importMeta": null,
+          "product": null
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "request_id": "bb093d50-ddb5-401a-a5ba-034b187b396e",
+    "pagination": {
+      "per_page": 50,
+      "next": "https://api.paddle.com/products?after=pro_01gsz4s0w61y0pp88528f1wvvb",
+      "has_more": false,
+      "estimated_total": 7
+    }
+  }
+}
