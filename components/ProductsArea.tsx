@@ -2,7 +2,7 @@ import SearchComponent from '../components/SearchComponent'
 
 const BASE_URL =
   process.env.NODE_ENV === "production"
-    ? `https://${process.env.VERCEL_URL}`
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : "http://localhost:3000";
 console.log('BASE_URL')
 console.log(BASE_URL)
