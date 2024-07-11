@@ -56,10 +56,10 @@ const SearchComponent: React.FC<SearchComponentProps> = ({ initialProducts }) =>
         <Error reset={handleSearch} />
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {products.length === 0 ? (
-            <p className="text-gray-600">No products found.</p>
-          ) : (
+          {products?.length !== 0 ? (
             <Products products={products}/>
+          ) : (
+            <p className="text-gray-600">No products found.</p>
           )}
         </div>
       )}
