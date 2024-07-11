@@ -26,7 +26,8 @@ describe('SearchComponent', () => {
 
     global.fetch = jest.fn(() =>
       Promise.resolve({
-        json: () => Promise.resolve({ data: mockFetchedProducts })
+        json: () => Promise.resolve({ data: mockFetchedProducts }),
+        ok: true
       })
     ) as jest.Mock
 
@@ -38,6 +39,7 @@ describe('SearchComponent', () => {
 
     await user.type(inputElement, '3')
     await user.click(buttonElement)
+    screen.debug()
 
     const productElements = screen.getAllByRole('heading')
     expect(productElements.length).toBe(mockFetchedProducts.length)
@@ -47,7 +49,8 @@ describe('SearchComponent', () => {
   test('shows no products when search results are empty', async () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
-        json: () => Promise.resolve({ data: [] })
+        json: () => Promise.resolve({ data: [] }),
+        ok: true
       })
     ) as jest.Mock
 
@@ -62,5 +65,26 @@ describe('SearchComponent', () => {
 
     const productElements = screen.queryAllByRole('heading')
     expect(productElements.length).toBe(0)
+  })
+
+  test('displays error message when request response is not ok', async () => {
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve({ data: [] }),
+        ok: false
+      })
+    ) as jest.Mock
+
+    const user = userEvent.setup()
+    render(<SearchComponent initialProducts={mockInitialProducts} />)
+
+    const inputElement = screen.getByPlaceholderText('Search by Product ID')
+    const buttonElement = screen.getByText('Search')
+
+    await user.type(inputElement, '2')
+    await user.click(buttonElement)
+
+    const productElements = screen.queryAllByRole('heading')
+    expect(productElements[0]).toHaveTextContent('Something went wrong!')
   })
 })
