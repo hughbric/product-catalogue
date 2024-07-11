@@ -25,7 +25,7 @@ const ProductsArea = async () => {
   const productsData = await getProducts()
 
   return (
-    <SearchComponent initialProducts={productsData.data.data}/>
+    <SearchComponent initialProducts={productsData.data.data ? productsData.data.data : []}/>
   )
 }
 
