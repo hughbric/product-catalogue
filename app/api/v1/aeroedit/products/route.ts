@@ -6,7 +6,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const productId = searchParams.get('productId')
 
-  const dataPath = path.join(process.cwd(), './app/input-data.json')
+  const dataPath = path.join(process.cwd(), './input-data.json')
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
 
   if (productId) {

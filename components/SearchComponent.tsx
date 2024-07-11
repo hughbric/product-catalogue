@@ -2,50 +2,36 @@
 
 import { useState } from 'react'
 import Products from './Products'
-
-interface Price {
-  id: string
-  description: string
-  unitPrice: {
-    amount: string
-    currencyCode: string
-  }
-}
-
-interface Product {
-  id: string
-  name: string
-  description: string
-  imageUrl: string
-  prices: Price[]
-}
-
-interface Products {
-  products: Product[]
-}
+import Error from './Error'
+import { ProductInterface } from './types'
 
 interface SearchComponentProps {
-  initialProducts: Product[]
+  initialProducts: ProductInterface[]
 }
 
-const fetchProducts = async (query: string = '') => {
-  const res = await fetch(`/api/v1/aeroedit/products${query ? `?productId=${query}` : ''}`)
-  const data = await res.json()
-  return data.data
+const fetchProducts = async ({ searchQuery = '', setIsSearchError }: { searchQuery: string, setIsSearchError: (arg: boolean) => void }) => {
+  const res = await fetch(`/api/v1/aeroedit/products${searchQuery ? `?productId=${searchQuery}` : ''}`)
+
+  if (!res.ok) {
+    setIsSearchError(true)
+  } else {
+    setIsSearchError(false)
+  }
+
+  return res.json()
 }
 
 const SearchComponent: React.FC<SearchComponentProps> = ({ initialProducts }) => {
-  const [products, setProducts] = useState<Product[]>(initialProducts)
+  const [products, setProducts] = useState<ProductInterface[]>(initialProducts)
   const [searchQuery, setSearchQuery] = useState('')
   const [isSearchError, setIsSearchError] = useState(false)
 
   const handleSearch = async () => {
-    const fetchedProducts = await fetchProducts(searchQuery)
-    setProducts(fetchedProducts)
+    const fetchedProducts = await fetchProducts({ searchQuery, setIsSearchError })
+    setProducts(fetchedProducts.data)
   }
 
   const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsSearchError(false)
     setSearchQuery(e.target.value)
   }
 
@@ -66,13 +52,17 @@ const SearchComponent: React.FC<SearchComponentProps> = ({ initialProducts }) =>
           Search
         </button>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {products.length === 0 ? (
-          <p className="text-gray-600">No products found.</p>
-        ) : (
-          <Products products={products}/>
-        )}
-      </div>
+      {isSearchError ? (
+        <Error reset={handleSearch} />
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {products.length === 0 ? (
+            <p className="text-gray-600">No products found.</p>
+          ) : (
+            <Products products={products}/>
+          )}
+        </div>
+      )}
     </>
   )
 }

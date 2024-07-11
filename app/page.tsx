@@ -1,13 +1,8 @@
-import SearchComponent from '../components/SearchComponent'
+import { Suspense } from 'react'
+import ProductsArea from '../components/ProductsArea'
+import Loading from '../components/Loading'
 
-export const getProducts = async () => {
-  const res = await fetch('http://localhost:3000/api/v1/aeroedit/products')
-  return res.json()
-}
-
-export default async function Home() {
-  const productsData = await getProducts()
-
+export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-gray-800 text-white py-4">
@@ -16,7 +11,9 @@ export default async function Home() {
         </div>
       </header>
       <main className="container mx-auto px-4 py-8">
-        <SearchComponent initialProducts={productsData.data.data} />
+        <Suspense fallback={<Loading />}>
+          <ProductsArea />
+        </Suspense>
       </main>
     </div>
   )

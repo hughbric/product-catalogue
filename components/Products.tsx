@@ -1,32 +1,16 @@
 'use client'
 
 import Product from './Product'
-
-interface Price {
-  id: string
-  description: string
-  unitPrice: {
-    amount: string
-    currencyCode: string
-  }
-}
-
-interface Product {
-  id: string
-  name: string
-  description: string
-  imageUrl: string
-  prices: Price[]
-}
+import { ProductInterface } from './types'
 
 interface ProductsProps {
-  products: Product[]
+  products: ProductInterface[]
 }
 
 const Products: React.FC<ProductsProps> = ({ products }) => {
   return (
     <>
-      {products.map((product: Product) => (
+      {products.map((product: ProductInterface) => (
         <Product key={product.id} product={product} />
       ))}
     </>

@@ -2,27 +2,13 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { ProductInterface } from './types'
 
-interface Price {
-  id: string
-  description: string
-  unitPrice: {
-    amount: string
-    currencyCode: string
-  }
+interface ProductsProps {
+  product: ProductInterface
 }
 
-interface ProductProps {
-  product: {
-    id: string
-    name: string
-    description: string
-    imageUrl: string
-    prices: Price[]
-  }
-}
-
-const Product: React.FC<ProductProps> = ({ product }) => {
+const Product: React.FC<ProductsProps> = ({ product }) => {
   const [showPrices, setShowPrices] = useState(false)
 
   const handleTogglePrices = () => {
