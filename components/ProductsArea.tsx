@@ -19,10 +19,10 @@ export const getProducts = async () => {
 }
 
 const ProductsArea = async () => {
-  // const productsData = await getProducts()
+  const productsData = await getProducts()
 
   return (
-    <SearchComponent initialProducts={[]}/>
+    <SearchComponent initialProducts={productsData.data.data}/>
   )
 }
 
