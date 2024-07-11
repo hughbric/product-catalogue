@@ -1,13 +1,20 @@
+import { cache } from 'react'
+import 'server-only'
 import SearchComponent from '../components/SearchComponent'
 
+export const preload = () => {
+  void getProducts()
+}
+ 
 const BASE_URL =
   process.env.NODE_ENV === "production"
-    ? `https://product-catalogue-iota.vercel.app`
+    ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000";
 console.log('BASE_URL')
 console.log(BASE_URL)
 console.log(process.env.VERCEL_URL)
-export const getProducts = async () => {
+
+export const getProducts = cache(async () => {
   const res = await fetch(`${BASE_URL}/api/v1/aeroedit/products`)
   console.log(res)
   return res.json()
@@ -15,11 +22,11 @@ export const getProducts = async () => {
   // To simulate a slow network request, uncomment the following code
   // return new Promise((resolve, reject) => {
   //   setTimeout(async () => {
-  //     const res = await fetch(`http://${BASE_URL}/api/v1/aeroedit/products`)
+  //     const res = await fetch(`${BASE_URL}/api/v1/aeroedit/products`)
   //     resolve(res.json())
   //   }, 5000)
   // });
-}
+})
 
 const ProductsArea = async () => {
   const productsData = await getProducts()
