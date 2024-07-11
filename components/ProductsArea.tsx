@@ -1,6 +1,8 @@
 import { cache } from 'react'
 import 'server-only'
 import SearchComponent from '../components/SearchComponent'
+import fs from 'fs'
+import path from 'path'
 
 export const preload = () => {
   void getProducts()
@@ -15,10 +17,13 @@ console.log(BASE_URL)
 console.log(process.env.VERCEL_URL)
 
 export const getProducts = cache(async () => {
-  const res = await fetch(`${BASE_URL}/api/v1/aeroedit/products`)
-  console.log(res)
-  return res.json()
+  // const res = await fetch(`${BASE_URL}/api/v1/aeroedit/products`)
+  // console.log(res)
+  // return res.json()
 
+  const dataPath = path.join(process.cwd(), './input-data.json')
+  const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+  return data
   // To simulate a slow network request, uncomment the following code
   // return new Promise((resolve, reject) => {
   //   setTimeout(async () => {
