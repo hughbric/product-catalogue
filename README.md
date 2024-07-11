@@ -1,4 +1,4 @@
-# React Take-Home Exercise
+# React Exercise
 
 ## Overview
 
