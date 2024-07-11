@@ -1,8 +1,8 @@
-import { cache } from 'react'
 import 'server-only'
-import SearchComponent from '../components/SearchComponent'
+import { cache } from 'react'
 import fs from 'fs'
 import path from 'path'
+import SearchComponent from '../components/SearchComponent'
 
 export const preload = () => {
   void getProducts()
