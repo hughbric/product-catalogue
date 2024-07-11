@@ -2,11 +2,13 @@ import SearchComponent from '../components/SearchComponent'
 
 const BASE_URL =
   process.env.NODE_ENV === "production"
-    ? process.env.VERCEL_URL
-    : "localhost:3000";
-
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+console.log('BASE_URL')
+console.log(BASE_URL)
+console.log(process.env.VERCEL_URL)
 export const getProducts = async () => {
-  const res = await fetch(`http://${BASE_URL}/api/v1/aeroedit/products`)
+  const res = await fetch(`${BASE_URL}/api/v1/aeroedit/products`)
   return res.json()
 
   // To simulate a slow network request, uncomment the following code
